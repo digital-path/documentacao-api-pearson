@@ -1,11 +1,16 @@
-site_name: Pearson
+site_name: API's DigitalPath
 theme:
   name: material
+  favicon: assets/digital.png
+  logo: assets/digital.png
+  
 nav:
   - Home: 'index.md'
   - "API's":
     - 'Correios': 'correios.md'
-  - About:
-    - 'License': 'license.md'
-    - 'Release Notes': 'release-notes.md'
+    - 'Receita': 'receita.md'
+    - 'Sintegra': 'sintegra.md'
+
+plugins:
+    - mermaid2
 

@@ -1,23 +1,22 @@
 # API Correios
-A API dos Correios permite consultar o endereço de um determinado CEP.
+A API dos Correios permite consultar o endereço correspondente a um determinado CEP.
 
 ### Documentação
 
-A API é protegida por JWT token que será gerada pela Pearson.
+Para consultar o endereço basta informar o **cep**.
 
-### Infraestrutura
-Para gerar o token deve ser definido as seguintes variaveis de ambiente:
+### Requisitos
+A API dos correios **não** necessita resolver captcha.
 
-- `JWT_SECRET`: Chave de autenticação da API.
-- `JWT_ALGORITHM`: Chave de segurança da API.
-
-O algoritmo de segurança usado nos testes é HS256, mas fica a disposição da Pearson para escolher outro algoritmo de segurança.
-
-A API dos correios **não** precisa de quebrar captcha.
+---
 
 #### Método
-`POST`
+**`POST`**
 
+#### URL
+`{url_lambda}/consulta_cep`
+
+---
 
 #### Corpo da Requisição
 ```json
@@ -26,9 +25,9 @@ A API dos correios **não** precisa de quebrar captcha.
 }
 ```
 
-> É aceito tanto o CEP 20231-030 quanto 20231030.
-> 
-> Se Passar no formato 20231-030 é obrigatorio que seja enviada como string.
+- Aceita CEPs nos formatos `20231-030` (como string) ou `20231030` (como inteiro).
+
+
 #### Header da Requisição
 ```json
 {
@@ -36,6 +35,9 @@ A API dos correios **não** precisa de quebrar captcha.
     "Authorization": "Bearer {token}"
 }
 ```
+    
+---
+
 
 #### Corpo da Resposta
 Codigo de retorno: 200
@@ -50,6 +52,7 @@ Codigo de retorno: 200
     "estado": "RJ"
 }
 ```
+---
 
 Codigo de retorno: 400
 
@@ -61,11 +64,18 @@ Codigo de retorno: 400
 ```
 Motivo da falha: CEP inválido
 
+---
 
+### Tempo de execução
+Nos testes locais, o tempo médio foi de `160 milisegundos`.
 
-### Erros
-Quando um CEP não for informado corretamente, será retornado um erro:
+```mermaid
+pie title Tempo de Execução
+    "Requisição" : 0.2
+    "Extração" : 0.4
+    "Resposta" : 0.2
+```
 
 ### Geração de Token
-Para gerar um token de acesso, basta acessar a API de autenticação da Pearson.
+O token jwt será disponibilizado pela [DigitalPath](https://digitalpath.com.br).
 
