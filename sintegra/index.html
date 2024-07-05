@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../receita/" rel="prev"/>
+<link href="../assets/digital.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
+<title>Sintegra - API's DigitalPath</title>
+<link href="../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#api-sintegra">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="API's DigitalPath" class="md-header__button md-logo" data-md-component="logo" href=".." title="API's DigitalPath">
+<img alt="logo" src="../assets/digital.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            API's DigitalPath
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Sintegra
+            
+          </span>
+</div>
+</div>
+</div>
+<script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="API's DigitalPath" class="md-nav__button md-logo" data-md-component="logo" href=".." title="API's DigitalPath">
+<img alt="logo" src="../assets/digital.png"/>
+</a>
+    API's DigitalPath
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    API's
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            API's
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../correios/">
+<span class="md-ellipsis">
+    Correios
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../receita/">
+<span class="md-ellipsis">
+    Receita
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Sintegra
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Sintegra
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#documentacao">
+<span class="md-ellipsis">
+      Documentação
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#requisitos">
+<span class="md-ellipsis">
+      Requisitos
+    </span>
+</a>
+<nav aria-label="Requisitos" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metodo">
+<span class="md-ellipsis">
+      Método
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#corpo-da-requisicao">
+<span class="md-ellipsis">
+      Corpo da Requisição
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#header-da-requisicao">
+<span class="md-ellipsis">
+      Header da Requisição
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#corpo-da-resposta">
+<span class="md-ellipsis">
+      Corpo da Resposta
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tempo-de-execucao">
+<span class="md-ellipsis">
+      Tempo de execução
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#geracao-de-token">
+<span class="md-ellipsis">
+      Geração de Token
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#documentacao">
+<span class="md-ellipsis">
+      Documentação
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#requisitos">
+<span class="md-ellipsis">
+      Requisitos
+    </span>
+</a>
+<nav aria-label="Requisitos" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metodo">
+<span class="md-ellipsis">
+      Método
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#corpo-da-requisicao">
+<span class="md-ellipsis">
+      Corpo da Requisição
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#header-da-requisicao">
+<span class="md-ellipsis">
+      Header da Requisição
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#corpo-da-resposta">
+<span class="md-ellipsis">
+      Corpo da Resposta
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tempo-de-execucao">
+<span class="md-ellipsis">
+      Tempo de execução
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#geracao-de-token">
+<span class="md-ellipsis">
+      Geração de Token
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="api-sintegra">API Sintegra</h1>
+<p>A API do SINTEGRA busca os dados de uma empresa pelo CNPJ/CPF OU IE.</p>
+<h3 id="documentacao">Documentação</h3>
+<p>Para requisições com <strong>ie</strong>, o <strong>cnpj_cpf</strong> deve ser informado como <code>null</code>.</p>
+<p>Para requisições com <strong>cnpj_cpf</strong>, o <strong>ie</strong> deve ser informado como <code>null</code>.</p>
+<p>O Campo <strong>uf</strong> é <strong>obrigatório</strong>. Utilize a sigla do estado.</p>
+<p>Caso o <strong>cnpj_cpf</strong> e o <strong>ie</strong> forem informados, o sistema vai priorizar a busca pelo <strong>ie</strong>.</p>
+<h3 id="requisitos">Requisitos</h3>
+<p>A API <strong>necessita</strong> resolver captcha.</p>
+<hr/>
+<h4 id="metodo">Método</h4>
+<p><strong><code>POST</code></strong></p>
+<p>ENDPOINT: <code>{url_lambda}/consulta_sintegra</code></p>
+<hr/>
+<h4 id="corpo-da-requisicao">Corpo da Requisição</h4>
+<pre><code class="language-json">{
+    "cnpj_cpf": "00.000.000/0000-00", 
+    "uf": "SP", 
+    "ie": null
+}
+</code></pre>
+<ul>
+<li>Aceita CNPJs nos formatos <code>"12.345.678/0001-95"</code> (como string) ou <code>12345678000195</code> (como inteiro).<blockquote>
+<p>PS: O mesmo vale para CPFs.</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="header-da-requisicao">Header da Requisição</h4>
+<pre><code class="language-json">{
+    "Content-Type": "application/json",
+    "Authorization": "Bearer {token}"
+}
+</code></pre>
+<hr/>
+<h4 id="corpo-da-resposta">Corpo da Resposta</h4>
+<p>Codigo de retorno: 200</p>
+<p><strong>Resposta:</strong></p>
+<pre><code class="language-json">{
+    "nome": "EMPRESA GENERICA LTDA.",
+    "uf": "XX",
+    "cnpj": "00.000.000/0000-00",
+    "situacao_cnpj": "Sem restrição",
+    "ie": "000000000000",
+    "situacao_ie": "Habilitado",
+    "tipo_ie": "IE Normal",
+    "cnae_principal": "0000000",
+    "data_situacao_uf": "01/01/2000",
+    "nome_fantasia": null,
+    "data_inicio_atividade": "01/01/2000",
+    "data_fim_atividade": null,
+    "regime_tributacao": "Normal",
+    "ie_destinatorio": "Obrigatória",
+    "porte": "Não informado",
+    "credito_presumido": "Não informado",
+    "tipo_produtor": "Não",
+    "municipio_ibge": "0000000 - Municipio Generico",
+    "logradouro": "RUA GENERICA",
+    "numero": "000",
+    "complemento": "COMPLEMENTO GENERICO",
+    "bairro": "BAIRRO GENERICO",
+    "cep": "00000000"
+}
+
+</code></pre>
+<hr/>
+<p>Codigo de retorno: 400</p>
+<p><strong>Resposta:</strong></p>
+<pre><code class="language-json">{
+    "Code": "BadRequestError",
+    "Message": "CNPJ inválido"
+}
+</code></pre>
+<p>Motivo da falha: CNPJ inválido</p>
+<hr/>
+<h3 id="tempo-de-execucao">Tempo de execução</h3>
+<p>Nos testes locais, o tempo médio foi de <code>4 segundos</code>.</p>
+<div class="mermaid">pie title Tempo de Execução
+    "Requisição" : 0.2
+    "Captcha" : 9
+    "Extração" : 0.4
+    "Resposta" : 0.4
+</div>
+<h3 id="geracao-de-token">Geração de Token</h3>
+<p>O token jwt será disponibilizado pela <a href="https://digitalpath.com.br">DigitalPath</a>.</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
