@@ -80,13 +80,35 @@ Codigo de retorno: 400
 **Resposta:**
 ```json
 {
-    "Code": "BadRequestError",
-    "Message": "CNPJ inválido"
+    "error": "CNPJ inválido"
 }
 ```
 Motivo da falha: CNPJ inválido
 
 ---
+
+Codigo de retorno: 500
+
+**Resposta:**
+```json
+{
+    "error": "acesso ao site da receita federal negado"
+}
+```
+Motivo da falha: O captcha não pode ser resolvido (refaça a requisição).
+
+---
+
+Codigo de retorno: 500
+
+**Resposta:**
+```json
+{
+    "error": "Erro interno"
+}
+```
+Motivo da falha: Erro interno ao processar a requisição.
+
 ### Tempo de execução
 Nos testes locais, o tempo médio foi de `10 segundos`.
 
