@@ -90,11 +90,11 @@ Codigo de retorno: 400
 **Resposta:**
 ```json
 {
-    "Code": "BadRequestError",
-    "Message": "CNPJ inválido"
+    "Code": "ContribuinteNaoEncontrado",
+    "Message": "Nenhum contribuinte encontrado ou Inscrição Estadual não habilitada."
 }
 ```
-Motivo da falha: CNPJ inválido
+Motivo da falha: Contribuinte não foi localizado ou não encontrou nenhuma inscrição estadual não habilitada(Acontece quando o contribuinte já deu baixa na IE).
 
 ---
 ### Tempo de execução

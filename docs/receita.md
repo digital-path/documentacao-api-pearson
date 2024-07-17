@@ -110,7 +110,7 @@ Codigo de retorno: 500
 Motivo da falha: Erro interno ao processar a requisição.
 
 ### Tempo de execução
-Nos testes locais, o tempo médio foi de `10 segundos`.
+Nos testes locais, o tempo médio foi de `15 segundos`.
 
 ```mermaid
 pie title Tempo de Execução
