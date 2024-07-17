@@ -344,14 +344,28 @@
 <p>Codigo de retorno: 400</p>
 <p><strong>Resposta:</strong></p>
 <pre><code class="language-json">{
-    "Code": "BadRequestError",
-    "Message": "CNPJ inválido"
+    "error": "CNPJ inválido"
 }
 </code></pre>
 <p>Motivo da falha: CNPJ inválido</p>
 <hr/>
+<p>Codigo de retorno: 500</p>
+<p><strong>Resposta:</strong></p>
+<pre><code class="language-json">{
+    "error": "acesso ao site da receita federal negado"
+}
+</code></pre>
+<p>Motivo da falha: O captcha não pode ser resolvido (refaça a requisição).</p>
+<hr/>
+<p>Codigo de retorno: 500</p>
+<p><strong>Resposta:</strong></p>
+<pre><code class="language-json">{
+    "error": "Erro interno"
+}
+</code></pre>
+<p>Motivo da falha: Erro interno ao processar a requisição.</p>
 <h3 id="tempo-de-execucao">Tempo de execução</h3>
-<p>Nos testes locais, o tempo médio foi de <code>10 segundos</code>.</p>
+<p>Nos testes locais, o tempo médio foi de <code>15 segundos</code>.</p>
 <div class="mermaid">pie title Tempo de Execução
     "Requisição" : 0.2
     "Captcha" : 9

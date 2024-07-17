@@ -351,11 +351,11 @@
 <p>Codigo de retorno: 400</p>
 <p><strong>Resposta:</strong></p>
 <pre><code class="language-json">{
-    "Code": "BadRequestError",
-    "Message": "CNPJ inválido"
+    "Code": "ContribuinteNaoEncontrado",
+    "Message": "Nenhum contribuinte encontrado ou Inscrição Estadual não habilitada."
 }
 </code></pre>
-<p>Motivo da falha: CNPJ inválido</p>
+<p>Motivo da falha: Contribuinte não foi localizado ou não encontrou nenhuma inscrição estadual não habilitada(Acontece quando o contribuinte já deu baixa na IE).</p>
 <hr/>
 <h3 id="tempo-de-execucao">Tempo de execução</h3>
 <p>Nos testes locais, o tempo médio foi de <code>4 segundos</code>.</p>
