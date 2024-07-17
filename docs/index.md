@@ -2,7 +2,7 @@
 
 ## Arquitetura
 
-As APIs Pearson foram desenvolvidas pela [DigitalPath](https://digitalpath.com.br) com foco na execução em ambientes AWS Lambda. A implementação é feita em [Python](https://www.python.org/) versão 3.12, utilizando o framework [Chalice AWS](https://aws.github.io/chalice/), o que permite uma integração eficiente com os serviços da AWS e uma estrutura escalável.
+As APIs Pearson foram desenvolvidas pela [DigitalPath](https://digitalpath.com.br) com foco na execução em ambientes AWS Lambda. A implementação é feita em [Python](https://www.python.org/) versão 3.10, utilizando o framework [Chalice AWS](https://aws.github.io/chalice/), o que permite uma integração eficiente com os serviços da AWS e uma estrutura escalável.
 
 
 ## Autenticação
