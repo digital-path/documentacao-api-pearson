@@ -405,7 +405,7 @@
 
 <h1 id="apis-pearson">API's Pearson</h1>
 <h2 id="arquitetura">Arquitetura</h2>
-<p>As APIs Pearson foram desenvolvidas pela <a href="https://digitalpath.com.br">DigitalPath</a> com foco na execução em ambientes AWS Lambda. A implementação é feita em <a href="https://www.python.org/">Python</a> versão 3.12, utilizando o framework <a href="https://aws.github.io/chalice/">Chalice AWS</a>, o que permite uma integração eficiente com os serviços da AWS e uma estrutura escalável.</p>
+<p>As APIs Pearson foram desenvolvidas pela <a href="https://digitalpath.com.br">DigitalPath</a> com foco na execução em ambientes AWS Lambda. A implementação é feita em <a href="https://www.python.org/">Python</a> versão 3.10, utilizando o framework <a href="https://aws.github.io/chalice/">Chalice AWS</a>, o que permite uma integração eficiente com os serviços da AWS e uma estrutura escalável.</p>
 <h2 id="autenticacao">Autenticação</h2>
 <p>Para garantir a segurança e a integridade dos dados, todas as APIs utilizam autenticação via <a href="https://jwt.io/">JWT</a>. Inicialmente, os tokens de autenticação serão gerados pela DigitalPath até que o sistema de gerenciamento de senhas da Pearson esteja em operação para automatizar a geração dos tokens.</p>
 <p>Todas as requisições às APIs devem incluir um token de autenticação no cabeçalho, conforme o exemplo abaixo:</p>
