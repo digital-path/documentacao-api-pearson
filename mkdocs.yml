@@ -1,4 +1,4 @@
-site_name: API's DigitalPath
+site_name: API DigitalPath
 theme:
   name: material
   favicon: assets/digital.png
@@ -6,11 +6,10 @@ theme:
   
 nav:
   - Home: 'index.md'
-  - "API's":
+  - "API":
     - 'Correios': 'correios.md'
     - 'Receita': 'receita.md'
     - 'Sintegra': 'sintegra.md'
 
 plugins:
     - mermaid2
-

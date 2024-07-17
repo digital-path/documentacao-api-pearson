@@ -1,4 +1,4 @@
-# API's Pearson
+# API Pearson
 
 ## Arquitetura
 
@@ -26,10 +26,10 @@ O tempo de execução pode variar devido ao captcha das páginas. Nos testes loc
 
 
 | API    | Tempo |
-| -------- | ------- |
-| Correios  | 110ms - 250ms    |
-| Sintegra | 3s - 8s     |
-| Receita    | 6s - 12s    |
+| -------- | -------       |
+| Correios | 110ms - 250ms |
+| Sintegra | 3s - 8s       |
+| Receita  | 6s - 20s      |
 
 >  Observação: Os tempos de execução podem variar quando as APIs estiverem hospedadas na AWS,
 devido a fatores como latência de rede, carga do servidor e disponibilidade dos servidores que resolvem o captcha.
